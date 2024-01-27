@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import appStore from "./utils/redux/appStore";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import WatchVideo from "./components/WatchVideo";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route exact path='/' element={<Home />} />
+            <Route exact path='/watchVideo' element={<WatchVideo />} />
           </Routes>
         </Provider>
       </BrowserRouter>
