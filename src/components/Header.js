@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const dispatch = useDispatch();
   return (
-    <div className='grid grid-cols-12 py-4 shadow-md sticky top-0 bg-white'>
+    <div className='grid grid-cols-12 py-4 shadow-md sticky top-0 bg-white z-20'>
       <div className='flex col-span-4'>
         <img src={HAMBURGER_ICON} alt='hamburger-btn' className='h-10 w-10 mx-2' onClick={() => { dispatch(toggleMenu()) }} />
         <Link to='/'><img src={YOUTUBE_LOGO} alt='logo' className='h-10 w-24' /></Link>

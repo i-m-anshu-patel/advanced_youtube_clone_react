@@ -15,7 +15,7 @@ const VideoContainer = ({ video }) => {
                     <div className='flex '>
                     <button className='bg-gray-300 py-1 px-3 border rounded-l-full'><i className="fa fa-eye"></i>  {video?.statistics?.viewCount}</button>
                         <button className='bg-gray-300 py-1 px-3 border'><i className="fa fa-thumbs-up"></i>  {video?.statistics?.likeCount}</button>
-                        <buttom className='bg-gray-300 py-1 px-3 border rounded-r-full'><i className="fa fa-comment"></i>  {video?.statistics?.commentCount}</buttom>
+                        <button className='bg-gray-300 py-1 px-3 border rounded-r-full'><i className="fa fa-comment"></i>  {video?.statistics?.commentCount}</button>
                     </div>
                 </div>
                 <p className='mt-2'>{video.snippet.description.substring(0, 120)}...</p>
