@@ -28,7 +28,7 @@ const VideoCards = ({ video }) => {
 export const AdPromotionVideoCard = (VideoCards) => {
   return (props) => {
     return (
-      <div className='relative bg-black'> 
+      <div className='relative'> 
         <VideoCards {...props} />
         <span className='absolute text-md text-white bg-yellow-700 -mt-6 px-1'>Ad</span>
       </div>
