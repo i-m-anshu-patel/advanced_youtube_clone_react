@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import popularVideos from '../utils/popularVideos';
-import VideoCards from './VideoCards';
+import VideoCards, {AdPromotionVideoCard} from './VideoCards';
 import { useDispatch } from 'react-redux';
 import { addVideo } from '../utils/redux/videoSlice';
 
@@ -10,8 +10,10 @@ const MainContainer = () => {
     useEffect(() => {
       dispatch(addVideo(listOfVideos))
     }, [])
+    const AdVideoPromoted = AdPromotionVideoCard(VideoCards)
   return (
     <div className='grid grid-cols-3'>
+      <AdVideoPromoted video={listOfVideos[0]} />
       {listOfVideos && listOfVideos.map((video) => 
       (<VideoCards key={video.id} video={video}/>))}
     </div>
