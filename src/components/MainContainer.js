@@ -13,7 +13,7 @@ const MainContainer = () => {
     const AdVideoPromoted = AdPromotionVideoCard(VideoCards)
   return (
     <div className='grid grid-cols-3'>
-      <AdVideoPromoted video={listOfVideos[0]} />
+      <AdVideoPromoted video={listOfVideos[25]} />
       {listOfVideos && listOfVideos.map((video) => 
       (<VideoCards key={video.id} video={video}/>))}
     </div>

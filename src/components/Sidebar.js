@@ -7,7 +7,6 @@ const Sidebar = () => {
                 <ul className='py-3'>
                     <li>Home</li>
                     <li>Shorts</li>
-                    <li>Subscriptions</li>
                     <li>Youtube Music</li>
                 </ul>
                 <ul className='py-4'>

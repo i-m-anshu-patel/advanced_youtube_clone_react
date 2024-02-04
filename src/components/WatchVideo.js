@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import VideoContainer from './VideoContainer';
 import VideoList from './VideoList';
-import { useDispatch } from 'react-redux';
-import { addVideo } from '../utils/redux/videoSlice';
 
 const WatchVideo = () => {
     const {state} = useLocation();

@@ -4,6 +4,7 @@ import appStore from "./utils/redux/appStore";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import WatchVideo from "./components/WatchVideo";
+import SearchPage from "./components/SearchPage";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/watchVideo' element={<WatchVideo />} />
+            <Route exact path='/search' element={<SearchPage />} /> 
           </Routes>
         </Provider>
       </BrowserRouter>

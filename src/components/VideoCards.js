@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import useConvertDuration from '../utils/hooks/useConvertDuration';
 
 const VideoCards = ({ video }) => {
-  const duration = useConvertDuration(video?.contentDetails?.duration);
+  const durationValue = video?.contentDetails?.duration ?? '';
+  const duration = useConvertDuration(durationValue);
   return (
     <Link to={"/watchVideo"} state={{video : video}}>
       <div className="w-80 rounded overflow-hidden shadow-lg  hover:border hover:border-black p-2 mt-2 cursor-pointer">
@@ -23,7 +24,6 @@ const VideoCards = ({ video }) => {
 
   )
 }
-
 
 export const AdPromotionVideoCard = (VideoCards) => {
   return (props) => {
